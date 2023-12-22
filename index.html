@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bible Verse Explorer</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Bible Verse Explorer</h1>
+
+        <!-- Input Form -->
+        <form id="bibleVerseForm">
+            <div class="form-group">
+                <label for="verseInput">Enter Bible Verse (e.g., John 3:16):</label>
+                <input type="text" class="form-control" id="verseInput" placeholder="Enter Bible Verse" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="fetchBibleVerse()">Fetch Verse</button>
+        </form>
+
+        <!-- Display Bible Verse -->
+        <div id="bibleVerseContainer" class="mt-4">
+            <!-- Bible verse will be displayed here -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Include Bible Verse JavaScript file -->
+    <script src="bibleVerse.js"></script>
+</body>
+</html>
